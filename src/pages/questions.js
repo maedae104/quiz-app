@@ -11,6 +11,7 @@ function Questions()  {
     <h1>Questions</h1>
     <form onSubmit={ () =>
     navigate("/finalpage") }>
+     <div class="question1">   
     <ul>What super power would you have?</ul>
     <div className="radio">
           <label>
@@ -44,6 +45,7 @@ function Questions()  {
             />
             Something else way more cool and obscure
           </label></div>
+          </div>
 
           
     <ul>What makes you believe in magic?</ul>

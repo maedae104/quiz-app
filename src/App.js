@@ -11,6 +11,7 @@ import {
 import Enter from './pages/enter.js'
 import Questions from './pages/questions.js'
 import FinalPage from './pages/finalpage.js'
+import "./app.css"
 
 
 function App() {
