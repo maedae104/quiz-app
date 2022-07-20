@@ -10,7 +10,7 @@ For all dependencies you can run:
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory "my-app", you can run:
 
 ### `npm start`
 
