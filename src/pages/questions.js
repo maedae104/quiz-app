@@ -1,127 +1,40 @@
-import { useNavigate } from "react-router-dom";
+import React, {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Box, Container } from '@mui/system';
+import { Button, Typography } from '@mui/material';
 
 
-function Questions()  {
 
-    let navigate = useNavigate();
 
+function Question1()  {
+  let navigate = useNavigate();
+
+  const navQuestion2 = () => {
+    navigate('/question2')
+  }
     return (
-    <div>
+
+      
+      <Container >
+        <Box mt={20} textAlign='center'>
+        <Typography variant="h4">What super power would you have?</Typography>
+        </Box>
         
-    <h1>Questions</h1>
-    <form onSubmit={ () =>
-    navigate("/finalpage") }>
-     <div class="question1">   
-    <ul>What super power would you have?</ul>
-    <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="fly"
-            />
-            Fly
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Teleport"
-            />
-            Teleport
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Mind Reading"
-            />
-            Mind Reading
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="other"
-            />
-            Something else way more cool and obscure
-          </label></div>
-          </div>
+        <Box mt={2} textAlign='center' >
+        <Button onClick={navQuestion2} variant='contained' >Fly</Button></Box>
+        <Box mt={2} textAlign='center' >
+        <Button onClick={navQuestion2} variant='contained' >Teleport</Button></Box>
+        <Box mt={2} textAlign='center'>
+        <Button onClick={navQuestion2} variant='contained'>Mind Reading</Button></Box>
+        <Box mt={2} onClick={navQuestion2}  textAlign='center'>
+        <Button variant='contained'>Something else way more cool and obscure</Button></Box>
 
-          
-    <ul>What makes you believe in magic?</ul>
-    <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="quietmornings"
-            />
-            Quiet Mornings
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="smiles"
-            />
-            Hearing someone you love geniuinely laugh
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="magician"
-            />
-            An actual magic trick
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="other"
-            />
-            I don't believe in silly stuff like that...
-          </label></div>
-    <ul>Best meal of the day?</ul>
-    <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Breakfast"
-            />
-            Breakfast
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Lunch"
-            />
-            Lunch
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="Dinner"
-            />
-            Dinner
-          </label></div>
-          <div className="radio">
-          <label>
-            <input
-              type="radio"
-              value="other"
-            />
-            Dessert
-          </label></div>
-
-          <button type="submit">
-              Activate Lasers</button>
-    </form>
-    </div>
-
-    )
-}
+       
+         </Container>
+      
+    )}
 
 
-export default Questions
+    
+      export default Question1
+ 
